@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo element</title>
+    <style>
+      h3 {
+        color: rgb(229, 149, 44);
+      }
+      h3:hover {
+        color: brown;
+      }
+      input:focus {
+        color: blueviolet;
+        /* padding-left: 2em; */
+        outline: 0;
+        border: 1px solid rgb(242, 7, 7);
+      }
+      a:visited {
+        color: crimson;
+      }
+      /* li:last-child{
+            color: brown;
+        } */
+      li:nth-child(2n) {
+        color: deeppink;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>My heading</h3>
+    <input type="text" />
+    <input type="text" />
+    <input type="text" />
+    <br />
+    <a href="https://asuratoon.com/">Asura</a>
+    <a href="https://kirmada.com/">Kiremada</a>
+
+    <ul>
+      <li>mana</li>
+      <li>pana</li>
+      <li>cana</li>
+      <li>kana</li>
+      <li>bana</li>
+      <li>lana</li>
+      <li>nana</li>
+      <li>tuna</li>
+    </ul>
+  </body>
+</html>
