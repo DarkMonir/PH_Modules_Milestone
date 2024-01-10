@@ -1,11 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Flex</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      .container {
+        display: flex;
+        gap: 10px;
+      }
+      .box {
+        background-color: skyblue;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .container2{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 20px;
+      }
+      .item-{
+        border: 2px solid purple;
+        background-color: chocolate;
+        border-radius: 5px;
+        width: 200px;
+        height: 200px
+        
+      }
+      @media screen and (max-width: 576px) {
+        .container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Responsive Flex</h2>
+
+    <div class="container">
+      <div class="box">
+        <h2>First box</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur iure
+          eaque error nesciunt illum quae minima dolorem, enim veritatis a
+          maiores quo consectetur amet dolorum cumque debitis velit? Officiis,
+          obcaecati at enim ab veritatis aliquid, voluptatum, mollitia provident
+          numquam optio amet quae nisi voluptatibus vitae quod! Ipsam
+          necessitatibus pariatur ipsa sed molestias consequatur iste ullam!
+          Nulla debitis placeat adipisci? Excepturi totam consequuntur
+          aspernatur vero soluta dolores fuga facilis in, quia iusto quaerat
+          itaque adipisci, consequatur nobis. Dolorem quasi atque nam minus
+          illo? Iure, maiores provident nostrum nesciunt saepe labore voluptatum
+          expedita eveniet esse dolor, error, eaque debitis nam consequatur
+          sequi.
+        </p>
+      </div>
+      <div class="box">
+        <h2>Second box</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur iure
+          eaque error nesciunt illum quae minima dolorem, enim veritatis a
+          maiores quo consectetur amet dolorum cumque debitis velit? Officiis,
+          obcaecati at enim ab veritatis aliquid, voluptatum, mollitia provident
+          numquam optio amet quae nisi voluptatibus vitae quod! Ipsam
+          necessitatibus pariatur ipsa sed molestias consequatur iste ullam!
+          Nulla debitis placeat adipisci? Excepturi totam consequuntur
+          aspernatur vero soluta dolores fuga facilis in, quia iusto quaerat
+          itaque adipisci, consequatur nobis. Dolorem quasi atque nam minus
+          illo? Iure, maiores provident nostrum nesciunt saepe labore voluptatum
+          expedita eveniet esse dolor, error, eaque debitis nam consequatur
+          sequi.
+        </p>
+      </div>
+    </div>
+    <div class="container2">
+      <div class="item-">1</div>
+      <div class="item-">2</div>
+      <div class="item-">3</div>
+      <div class="item-">4</div>
+      <div class="item-">5</div>
+      <div class="item-">6</div>
+      <div class="item-">7</div>
+      <div class="item-">8</div>
+      <div class="item-">9</div>
+      <div class="item-">10</div>
+    </div>
+  </body>
 </html>
