@@ -191,19 +191,56 @@
 
 // -----------------Exercise 6 -----------------------------
 
-const age = 4;
-const student = true;
+// const age = 4;
+// const student = true;
 
-if (age<10){
-  console.log('Its free ')
-}
-else if(age>=10 && age <= 25 && student){
+// if (age<10){
+//   console.log('Its free ')
+// }
+// else if(age>=10 && age <= 25 && student){
 
-  console.log("Get a 50% discount")
+//   console.log("Get a 50% discount")
+// }
+// else if(age>=60){
+//   console.log("Get a 15% discount")
+// }
+// else{
+//   console.log('Regular ticket fare 800 tk')
+// }
+
+
+
+// //////////////////////////////////////////////////////////
+
+// const ps = require("prompt-sync");
+// const prompt = ps();
+// const prompt= require("prompt-sync")({sigint:true}); 
+
+
+
+const prompt = require('prompt-sync')();
+
+let grades = [];
+
+while (true) {
+  let marks = prompt('add a grade: ');
+
+  if (marks === null) {
+    break;
+  }
+
+  grades.push(Number(marks));
+  console.log(grades);
 }
-else if(age>=60){
-  console.log("Get a 15% discount")
+
+
+let count = 0;
+let total = 0;
+
+for(let i = 0; i < grades.length;i++){
+  count++;
+  total += grades[i];
 }
-else{
-  console.log('Regular ticket fare 800 tk')
-}
+
+let avg = total / count;
+console.log(avg);
